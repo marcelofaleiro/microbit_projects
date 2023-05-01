@@ -7,5 +7,5 @@ import utime
 
 # Set up event listener for button A press
 while True:
-    display.scroll(temperature())
+    display.show(temperature())
     utime.sleep_ms(100) # Delay to prevent program from running too quickly
