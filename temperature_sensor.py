@@ -1,9 +1,11 @@
-# Imports go at the top
+# Import necessary modules
 from microbit import *
+import utime
 
-# Define the on_button_pressed_a function
+# Define function to check temperature and display result
 
-# Code in a 'while True:' loop repeats forever
+
+# Set up event listener for button A press
 while True:
-    display.show(Image.ANGRY)
-    sleep(1000)
+    display.scroll(temperature())
+    utime.sleep_ms(100) # Delay to prevent program from running too quickly
