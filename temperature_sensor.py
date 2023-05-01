@@ -6,7 +6,7 @@ def on_button_pressed_a():
     display.scroll(str(input.temperature()))
 
 # Set up an event listener for when the A button is pressed
-input.on_button_pressed(Button.A, on_button_pressed_a)
+button_a.was_pressed = on_button_pressed_a
 
 # Code in a 'while True:' loop repeats forever
 while True:
